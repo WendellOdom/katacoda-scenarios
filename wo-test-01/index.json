@@ -33,6 +33,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ubuntu2004"
+    "imageid": "wendello-environment-01"
   }
 }
