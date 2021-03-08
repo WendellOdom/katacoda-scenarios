@@ -33,6 +33,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "ansible"
+    "imageid": "wendello-environment-01"
   }
 }
