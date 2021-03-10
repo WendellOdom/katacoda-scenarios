@@ -1,5 +1,5 @@
 # Step 4
-1. this is step 1
+1. this is step 1. The file ref is /root/assets/ccnaskills-logo.png
 ![A figure](/root/assets/ccnaskills-logo.png)
 
 1. this is step 2
