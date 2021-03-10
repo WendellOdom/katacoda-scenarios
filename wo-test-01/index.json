@@ -35,8 +35,8 @@
     "assets": {
       "host01": [
         {
-          "file": "ccnaskills-logo.png",
-          "target": ""
+          "file": "*",
+          "target": "/root/assets"
         }
       ]
     }
