@@ -2,6 +2,15 @@
 1. this is step 1. The file ref is /root/assets/ccnaskills-logo.png
 ![A figure](/root/assets/ccnaskills-logo.png)
 
+1. The file ref is ~/assets/ccnaskills-logo.png
+![A figure](~/assets/ccnaskills-logo.png)
+
+1. The file ref is ./assets/ccnaskills-logo.png
+![A figure](./assets/ccnaskills-logo.png)
+
+1. The file ref is ./ccnaskills-logo.png
+![A figure](./ccnaskills-logo.png)
+
 1. this is step 2
 2. this is yet another step
 3. This is an attempt to embed a You tube video
