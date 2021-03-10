@@ -31,6 +31,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "ccnaskills-logo.png",
+          "target": ""
+        }
+      ]
     }
   },
   "environment": {

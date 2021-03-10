@@ -25,3 +25,12 @@ interface loopback 1
   ip address 1.1.1.1 255.255.255.0
 description this here is a description
 ```
+
+## Another test after reading about Highlight JS
+8. Here's another try because the katacoda docs say that it ignores the Markdown ticks for code highlights, but instead uses "Highlight JS"
+9. That doc lists a style of "highlightjs-cisco-cli" which I am attempting below:
+<pre><code class=highlightjs-cisco-cli>
+interface loopback 1
+  ip address 1.1.1.1 255.255.255.0
+  description this here is a description
+</pre>
