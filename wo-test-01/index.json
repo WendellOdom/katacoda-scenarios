@@ -43,7 +43,7 @@
       "host01": [
         {
           "file": "*",
-          "target": "/assets"
+          "target": "/zzz"
         }
       ]
     }

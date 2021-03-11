@@ -9,9 +9,11 @@
 1. The next step assumes: <pre>    "uieditorpath": "/root/netauto"</pre>
 1. Open the file in the Kata text editor by clicking the highlighted item. `./ansible-course-01/ansible-hosts.ini`{{open}}
 1. Look around the file and close it in the GUI by clicking (whatever)
+1. Clear the screen with a clear command: `clear`{{execute}}
 
 ## Testing File Edit with nano
 
-1. Open the file in the nano text editor in the shell by clicking the highlighted item. `nano ./ansible-course-01/ansible-hosts.ini`{{execute}}
-1. Look around the file.
-1. Close the file by pressing Control X.
+1. This next step relies on the **pwd** setting in the shell.
+2. Open the file in the nano text editor in the shell by clicking the highlighted item. `nano ansible-hosts.ini`{{execute}}
+3. Look around the file.
+4. Close the file by pressing Control X. You can even try clicking this: `^X`{{execute ctrl-seq}}
