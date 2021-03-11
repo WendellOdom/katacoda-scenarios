@@ -41,5 +41,3 @@ interface loopback 1
     - name: Show all variables
       debug: msg="{{ query('varnames', '.+')}}"
   </code></pre>
-
-  1. I may need to inject as a Gist or something as MD seems to be interpreting the YAML.
