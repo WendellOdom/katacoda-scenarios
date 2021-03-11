@@ -1,45 +1,33 @@
-# Step 4
-1. this is step 1. The file ref is /root/assets/ccnaskills-logo.png
+## To get an image to appear...
+1. The kata begins with the home directory of /root
+2. The index.json settings cause the creation of a subdirectory /assets, with all image files included there.
+3. The following references the file relying on a pwd of /root, using a reference of ./assets/ccnaskills-logo.png
+![A figure](./assets/ccnaskills-logo.png)
+4. This next one attempts a full path reference: /root/assets/ccnaskills-logo.png
 ![A figure](/root/assets/ccnaskills-logo.png)
 
-1. The file ref is ~/assets/ccnaskills-logo.png
-![A figure](~/assets/ccnaskills-logo.png)
-
-1. The file ref is ./assets/ccnaskills-logo.png
-![A figure](./assets/ccnaskills-logo.png)
-
-1. The file ref is ./ccnaskills-logo.png
-![A figure](./ccnaskills-logo.png)
-
-1. this is step 2
-2. this is yet another step
-3. This is an attempt to embed a You tube video
+## To get a video into the page
+5. This is an attempt to embed a You tube video
 <iframe style="width: 700px;height: 400px;" src="https://www.youtube-nocookie.com/embed/KeJJ34BvA7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-4. This is a command: `pwd`{{execute}}
+6. This is a command: `pwd`{{execute}}
 ## Testing fixed width font: as paragraph w/ pre tag
 
 <pre>
 access-list 101 permit udp host 1.1.1.1 eq 22 host 2.2.2.2 gt 1023
 access-list 101 permit tcp host 3.3.3.3 gt 1023 host 4.4.4.4 lt 1024
 </pre>
-6. Testing fixed width inside a line using pre tags: <pre>hostname fred</pre>
-7. The previous line put the fixed width text on another line.
+7. Testing fixed width inside a line using pre tags: <pre>hostname fred</pre>
+8. The previous line put the fixed width text on another line.
+9. Testing fixed width just using markdown: **hostname fred**
 
-## Samples of using Inline Code Format
-8. Here's another try of denoting fixed width text, treating it as code, with backticks per GitHub Markdown cheatsheet - fixed with text follows: `hostname fred`
-9.  Here's another sample of inline code, multiline, with triple backticks:
-```
-interface loopback 1
-  ip address 1.1.1.1 255.255.255.0
-description this here is a description
-```
 
-## Another test after reading about Highlight JS
-8. Here's another try because the katacoda docs say that it ignores the Markdown ticks for code highlights, but instead uses "Highlight JS"
-9. That doc lists a style of "highlightjs-cisco-cli" which I am attempting below:
+
+## Best way to highlight IOS code
+9. After several tests, here's what seems to work best for IOS. Results in a fairly genric output w/ no color.
+10. That doc lists a style of "highlightjs-cisco-cli" which I am attempting below:
 <pre><code class=highlightjs-cisco-cli>
 interface loopback 1
   ip address 1.1.1.1 255.255.255.0
   description this here is a description
-</pre>
+  </code></pre>
