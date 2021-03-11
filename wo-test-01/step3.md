@@ -16,4 +16,4 @@
 1. This next step relies on the **pwd** setting in the shell.
 2. Open the file in the nano text editor in the shell by clicking the highlighted item. `nano ansible-hosts.ini`{{execute}}
 3. Look around the file.
-4. Close the file by pressing Control X. You can even try clicking this: `^X`{{execute ctrl-seq}}
+4. Close the file by pressing Control X.
