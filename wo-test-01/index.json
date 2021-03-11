@@ -27,7 +27,10 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "background.sh",
+      "code": "foreground.sh",
+      "credits": "These are credits the author can change."
     },
     "finish": {
       "text": "finish.md"
