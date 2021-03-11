@@ -1,159 +1,45 @@
-COPIED FROM KATACODA SAMPLE MARKDOWN EXTENSIONS
-Katacoda has extended Markdown to simplify the users interaction while completing the scenarios and encounter less mistakes.
 
-## Copy to Clipboard
-
-This extension will copy the command or text to the clipboard.
-
-Markdown: 
-<pre>`echo "Copy to Clipboard"`{{copy}}</pre>
-
-Results:
-`echo "Copy to Clipboard"`{{copy}}
-
-## Multi-Line Copy to Clipboard
-
-The same functionality as above is available over multiple lines.
-
-Markdown: 
-<pre>
-```
-echo "Line 1"
-
-echo "Line 2"
-
-echo "Line 3"
-```{{copy}}
-</pre>
-
-Results:
-```
-echo "Line 1"
-
-echo "Line 2"
-
-echo "Line 3"
-```{{copy}}
-
-## Execute in Terminal
-
-Katacoda has integration to automatically execute the commands for the terminal.
-
-This is done by adding `execute` to the markdown code block, for example:
-<pre>`echo "Run in Terminal"`{{execute}}</pre>
-
-This creates:
-`echo "Run in Terminal"`{{execute}}
-
-## Multi-Line Execute in Terminal
-
-The same functionality as above is available over multiple lines.
+## Testing fixed width font: as paragraph w/ pre tag
 
 <pre>
-```
-echo "Line 1"
-
-echo "Line 2"
-
-echo "Line 3"
-```{{execute}}
-
+access-list 101 permit udp host 1.1.1.1 eq 22 host 2.2.2.2 gt 1023
+access-list 101 permit tcp host 3.3.3.3 gt 1023 host 4.4.4.4 lt 1024
 </pre>
 
-This creates:
-```
-echo "Line 1"
+## Testing Bold and Ital ignoring Fixed Width
 
-echo "Line 2"
+1. Testing fixed width inside a line using pre tags: <pre>hostname fred</pre>
+1. Does this line format correctly?
+1. Testing fixed width just using markdown: **hostname fred**
 
-echo "Line 3"
-```{{execute}}
+## Best way to highlight IOS code
 
-## Interrupt
+1. After several tests, here's what seems to work best for IOS. Results in a fairly genric output w/ no color.
+1. That doc lists a style of "highlightjs-cisco-cli" which I am attempting below:
 
-When the user has long running commands, such as a watch, it can be useful to ensure that this is stopped but the user runs the next command. 
+<pre><code class="highlightjs-cisco-cli">
+interface loopback 1
+  ip address 1.1.1.1 255.255.255.0
+  description this here is a description
+  </code></pre>
 
-<pre>`echo "Send Ctrl+C before running Terminal"`{{execute interrupt}}</pre>
+## Best way to highlight Ansible YAML
 
-`echo "Send Ctrl+C before running Terminal"`{{execute interrupt}}
+1. Testing w/ YAML.
+1. That doc lists a style of "yaml" which I am attempting below:
 
-## Interrupt
+<pre><code class="yaml">
+---
+- name: Testing Ansible - gather facts
+  hosts: all
+  gather_facts: False
 
-When the user has long running commands, such as `top`{{execute}}, it can be useful to ensure that this is stopped but the user runs the next command. 
+  vars:
+    output: []
 
-<pre>`echo "Send Ctrl+C before running Terminal"`{{execute interrupt}}</pre>
+  tasks:
+    - name: Show all variables
+      debug: msg="{{ query('varnames', '.+')}}"
+  </code></pre>
 
-`echo "Send Ctrl+C before running Terminal"`{{execute interrupt}}
-
-## Control Sequences
-
-Alongside the interrupt command above, certain Control Sequences can be sent.
-
-Given a long running command, like `top`{{execute}}. It can be stopped using <kbd>Ctrl</kbd>+<kbd>C</kbd>. This can be executed as a control sequence with the command `^C`{{execute ctrl-seq}}
-
-The markdown for this is:
-<pre>
-`^C`{{execute ctrl-seq}}
-</pre>
-
-The use of control sequences can be useful when teaching applications such as `vim`{{execute}}.
-
-The instructions can guide the user on how  
-
-* Switch to insert mode by typing `i`{{execute no-newline}}
-
-* Once finished, press ESC (`^ESC`{{execute ctrl-seq}}) to switch back to normal mode
-
-* To exit, type `:q!`{{execute}}
-
-In the markdown, you would include:
-<pre>
-`i`{{execute no-newline}}
-
-`^ESC`{{execute ctrl-seq}}
-
-`:q!`{{execute}}
-</pre>
-
-Notice the use of `no-newline` as a way to send a keystroke with a carriage return following it.
-
-## Keyboard Icons
-
-This can also be helped by using Keyboard symbols to show users to use <kbd>Ctrl</kbd>+<kbd>C</kbd>
-
-The Markdown is:
-<pre>
-&#x3C;kbd&#x3E;Ctrl&#x3C;/kbd&#x3E;+&#x3C;kbd&#x3E;C&#x3C;/kbd&#x3E;
-</pre>
-
-
-## Execute on different hosts 
-
-When using the `terminal-terminal` layout and multiple hosts within the cluster, you can have commands executed on which host is required. This is used within our [Kubernetes scenarios](https://www.katacoda.com/courses/kubernetes/getting-started-with-kubeadm).
-
-<pre>
-`echo "Run in Terminal Host 1"`{{execute HOST1}}
-
-`echo "Run in Terminal Host 2"`{{execute HOST2}}
-</pre>
-
-`echo "Run in Terminal Host 1"`{{execute HOST1}}
-
-`echo "Run in Terminal Host 2"`{{execute HOST2}}
-
-## Execute in different Terminal windows
-
-When explaining complex systems, it can be useful to run commands in a separate terminal window. This can be run automatically by including the target Terminal number. 
-
-If the terminal is not open, it will launch and the command will be executed. 
-
-<pre>
-`echo "Run in Terminal 3"`{{execute T3}}
-
-`echo "Open and Execute in Terminal 4"`{{execute T4}}
-
-</pre>
-
-`echo "Run in Terminal 3"`{{execute T3}}
-
-`echo "Open and Execute in Terminal 4"`{{execute T4}}
+  1. I may need to inject as a Gist or something as MD seems to be interpreting the YAML.
