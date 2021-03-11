@@ -1,6 +1,6 @@
 {
-  "title": "Wendell's Test 01",
-  "description": "Test #01 of Katacoda Lab Process",
+  "title": "Wendell Template and Test Kata",
+  "description": "A Kata with pages to test things I expect to use in different Katas",
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
@@ -39,7 +39,7 @@
       "host01": [
         {
           "file": "*",
-          "target": "/root/assets"
+          "target": "/assets"
         }
       ]
     }
