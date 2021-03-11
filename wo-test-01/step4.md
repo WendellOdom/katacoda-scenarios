@@ -4,8 +4,7 @@
 2. The index.json settings cause the creation of a subdirectory /assets, with all image files included there.
 3. The following references the file relying on a pwd of /root, using a reference of ./assets/ccnaskills-logo.png
 ![A figure](./assets/ccnaskills-logo.png)
-4. One more attempt at the explicit path of /root/assets/ccnaskills-logo.png:
-![A figure](/root/assets/ccnaskills-logo.png)
+
 
 ## To get a video into the page
 
