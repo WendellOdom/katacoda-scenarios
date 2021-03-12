@@ -1,9 +1,21 @@
-# Step Finish - Be Done with you!
-Hey there, Katacoda doesn't want a step N, they want a step Finish.
+# Finish
 
-Here it is.
+This page defines the end of the lab. It should be a call to action.
 
-## Do another ls -lap Command
-Do another 'ls -lap' {{ execute }} command.
+## For More Labs on this Topic:
 
-More `ls -lap`{{execute}}
+1. Do this lab: [More Ansible!](https://katacoda.com/jonatanblue/scenarios/1)
+2. Or try it this way: <a href="https://katacoda.com/jonatanblue/scenarios/1/" target="_blank">Even More Ansible!</a>
+
+## The Lab Pages for this Lab are:
+
+1. Discover the Lab Environment
+2. How to Use {{execute}} and Similar
+3. Working with Files in the Shell and Kata Editor
+4. Embedding Images and Videos
+5. Embedding Code into the Lab Markdown
+6. A Page of Examples from the Katacoda.com Markdown Examples
+
+## The Lab Map:
+
+![Use this map to guide you through the related Katas:](./assets/ansible-kata-map.png)
