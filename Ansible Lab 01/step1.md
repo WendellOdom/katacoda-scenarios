@@ -50,18 +50,17 @@
 
 ## Part C: Add default and other variables
 
-1. 
-2. Setup requires some use of text editor??!?! add common network management settings. Note that the variables are available from the playbook. Become ansible variables. Explain a bit. (Understand a bit???)
-3. Add these to the ansible.cfg file:
-	A. host_key_checking = False
-	B. retry_files_enabled = False
-	C. action_warnings = False
-	D. deprecation_warnings = False
-4. Do an ls -lap command, find, and others to find the file and view it. 
-7. Do ansible-config view command, find the pointer to the inventory file
-8. Confirm lo
-9. Check order of precedence for where file is located https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations
-10. That page points here, to Github, to a sample file - just read. https://github.com/ansible/ansible/blob/devel/examples/ansible.cfg
+1. Setup requires some use of text editor??!?! add common network management settings. Note that the variables are available from the playbook. Become ansible variables. Explain a bit. (Understand a bit???)
+2. Add these to the ansible.cfg file:
+   A. host_key_checking = False
+   B. retry_files_enabled = False
+   C. action_warnings = False
+   ≥D. deprecation_warnings = False
+3. Do an ls -lap command, find, and others to find the file and view it. 
+4. Do ansible-config view command, find the pointer to the inventory file
+5. Confirm lo
+6. Check order of precedence for where file is located https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations
+7.  That page points here, to Github, to a sample file - just read. https://github.com/ansible/ansible/blob/devel/examples/ansible.cfg
 
 # Complete Lab Environement Setup
 

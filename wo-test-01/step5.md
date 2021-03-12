@@ -65,3 +65,22 @@ interface loopback 1
       2. Indented 2 levels
    3. This is indented 1 level
    4. This is indented 1 level
+
+## Collapsible Questions Section
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
+1. Hey do this command: `ansible --version`{{execute}}. <details><summary>What version of Ansible does the command show?</summary>
+It should show some release of version 2.10, for example: 
+<pre><code>
+ansible-config 2.10.6
+</code></pre>
+</details>
