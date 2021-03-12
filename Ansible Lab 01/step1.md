@@ -10,6 +10,25 @@ The lab environment begins with much of the software pre-installed. For each lab
 
 ## Part A: Location of Ansible Config File
 
+1. Examine the ansible.cg file Ansible would use right now: `ansible --version`{{execute}}
+2. Check the Ansible order-of-preference for where it looks for the ansible.cfg file by looking at this page: https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations
+3. Examine those factors more closely using these commands:
+   1. List all OS environment variables: `printenv`{{execute}}
+   2. List the ANSIBLE_CONFIG OS environment variable: `printenv ANSIBLE_CONFIG`{{execute}}
+   3. List the current directory: `pwd`{{execute}}
+   4. List the files in the current directory: `ls -lap`{{execute}}
+   5. List files in the current directory named "*ansible.cfg*": `ls *ansible.cfg* -lap`{{execute}}
+   6. Display the home directory: `printenv HOME`{{execute}}
+   7. Display the contents of the home directory: `ls ~/ -lap`{{execute}}
+   8. Display files in the home directory named "*ansible.cfg*": `ls ~/*ansible.cfg* -lap`{{execute}}
+4. That page points here, to Github, to a sample file - just read. https://github.com/ansible/ansible/blob/devel/examples/ansible.cfg
+5. Display the config file w/ more .ansible.cfg - WO - must set up labs filename. Have only comments to begin.
+6. Do an ansible-config --version command which identifies the config file Ansible will use right now.
+7. Do also ansible --version command lists the same output. 
+8. See that the file has only comments right now.
+
+## Part A: Location of Ansible Config File
+
 1. Notes: Start in home. Confirm that fact w/ user. Then guide them to see what Ansible chooses on this host.
 2. Check pwd. Describe as ~/, maybe CD there, to make the point.
 3. Check order of precedence for where file is located https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations
