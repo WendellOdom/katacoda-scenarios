@@ -1,6 +1,6 @@
 {
-  "title": "Wendell Template and Test Kata",
-  "description": "A Kata with pages to test things I expect to use in different Katas",
+  "title": "Ansible Lab 01",
+  "description": "Testing for Now, but a Basic Ansible Lab",
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
