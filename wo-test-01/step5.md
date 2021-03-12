@@ -41,3 +41,27 @@ interface loopback 1
     - name: Show all variables
       debug: msg="{{ query('varnames', '.+')}}"
   </code></pre>
+
+## Nested List Test
+
+1. This is a test line
+   1. This is indented 1 level
+   2. This is indented 1 level
+      1. Indented 2 levels
+      2. Indented 2 levels
+   3. This is indented 1 level
+   4. This is indented 1 level
+1. This is a test line
+   1. This is indented 1 level
+   2. This is indented 1 level
+      1. Indented 2 levels
+      2. Indented 2 levels
+   3. This is indented 1 level
+   4. This is indented 1 level
+1. This is a test line
+   1. This is indented 1 level
+   2. This is indented 1 level
+      1. Indented 2 levels
+      2. Indented 2 levels
+   3. This is indented 1 level
+   4. This is indented 1 level
