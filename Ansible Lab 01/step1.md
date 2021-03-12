@@ -10,22 +10,32 @@ The lab environment begins with much of the software pre-installed. For each lab
 
 ## Part A: Location of Ansible Config File
 
-1. Examine the ansible.cg file Ansible would use right now: `ansible --version`{{execute}}
+1. Examine the ansible.cfg file Ansible would use right now: `ansible --version`{{execute}}
+2. Use an alternate command to find that same information: `ansible-config --version`{{execute}} *Do you see any differences in output between the two commands?*
+4. Use the **clear** command now or anytime to unclutter the CLI window: `clear`{{execute}}
+5. Repeat the **ansible --version** and **ansible-config --version** commands to find the Ansible software version in use. *Do they show the same version of code? What Version(s)?*
+
+## Part B: Check the Locations for Ansible.cfg File 
+
+**???wwo - place a figure here for the order of precedence.**
+
+1. Examine the ansible.cfg file Ansible would use right now: `ansible --version`{{execute}}
 2. Check the Ansible order-of-preference for where it looks for the ansible.cfg file by looking at this page: https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations
-3. Examine those factors more closely using these commands:
+3. Examine the first option: the ANSIBLE_CONFIG environment variable.
    1. List all OS environment variables: `printenv`{{execute}}
    2. List the ANSIBLE_CONFIG OS environment variable: `printenv ANSIBLE_CONFIG`{{execute}}
-   3. List the current directory: `pwd`{{execute}}
-   4. List the files in the current directory: `ls -lap`{{execute}}
-   5. List files in the current directory named "*ansible.cfg*": `ls *ansible.cfg* -lap`{{execute}}
-   6. Display the home directory: `printenv HOME`{{execute}}
-   7. Display the contents of the home directory: `ls ~/ -lap`{{execute}}
-   8. Display files in the home directory named "*ansible.cfg*": `ls ~/*ansible.cfg* -lap`{{execute}}
-4. That page points here, to Github, to a sample file - just read. https://github.com/ansible/ansible/blob/devel/examples/ansible.cfg
-5. Display the config file w/ more .ansible.cfg - WO - must set up labs filename. Have only comments to begin.
-6. Do an ansible-config --version command which identifies the config file Ansible will use right now.
-7. Do also ansible --version command lists the same output. 
-8. See that the file has only comments right now.
+4. Examine Option 2: File ansible.cfg in the Current Directory
+   1. List the current directory: `pwd`{{execute}}
+   2. List the files in the current directory: `ls -lap`{{execute}}
+   3. List files in the current directory with pattern "*ansible.cfg*": `ls *ansible.cfg* -lap`{{execute}}
+5. Examine Option 3: File .ansible.cfg in the Home Directory
+   1. Display the home directory: `printenv HOME`{{execute}}
+   2. Display the contents of the home directory: `ls ~/ -lap`{{execute}}
+   3. Display files in the home directory named "*ansible.cfg*": `ls ~/*ansible.cfg* -lap`{{execute}}
+6. Examine Option 4: File /etc/ansible/ansible.cfg
+   1. Display the contents of the /etc/ansible directory: `ls /etc/ansible -lap`{{execute}}
+   2. Display files in the directory named "*ansible.cfg*": `ls /etc/ansible/*ansible.cfg* -lap`{{execute}}
+7. Examine the choice Ansible would make right now for its ansible.cfg file: `ansible --version`{{execute}}
 
 ## Part A: Location of Ansible Config File
 
